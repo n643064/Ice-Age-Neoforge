@@ -37,11 +37,11 @@ public abstract class BiomeMixin
     @Inject(method = "getFoliageColor", at = @At("HEAD"), cancellable = true)
     private void getDefaultFoliageColor(CallbackInfoReturnable<Integer> cir)
     {
-        cir.setReturnValue(0x008060);
+        cir.setReturnValue(0xa3c2c2);
     }
     @Inject(method = "getGrassColor", at = @At("HEAD"), cancellable = true)
     private void getDefaultGrassColor(double posX, double posZ, CallbackInfoReturnable<Integer> cir)
     {
-        cir.setReturnValue(0x008060);
+        cir.setReturnValue(0xa3c2c2);
     }
 }
