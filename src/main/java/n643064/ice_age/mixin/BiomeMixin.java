@@ -25,7 +25,7 @@ public abstract class BiomeMixin
         cir.setReturnValue(true);
     }
     @Inject(method = "getPrecipitationAt", at = @At("HEAD"), cancellable = true)
-    private void getPrecipitation(BlockPos pos, CallbackInfoReturnable<Biome.Precipitation> cir)
+    private void getPrecipitation(BlockPos pos, int p_361844_, CallbackInfoReturnable<Biome.Precipitation> cir)
     {
         cir.setReturnValue(Biome.Precipitation.SNOW);
     }
